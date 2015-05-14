@@ -13,8 +13,8 @@ body {
 }
 
 .container-all {
-	@include span-columns (10);
-	@include shift (1);
+	@include span-columns (8);
+	@include shift (2);
 	
 }
 
@@ -55,22 +55,47 @@ li {
 
 .news-posts {
 	margin-top: 25px;
-	height: 350px;
+	margin-bottom: 25px;
+	height: 200px;
 	@include span-columns (4);
 	background-color: white;
 }
 
-.pic-short {
-	margin-top: 25px;
-	height: 250px;
-	@include span-columns (4);
-	background-color: white;
+.skateboarders {
+	margin: 25px auto;
 }
 
-.pic-tall {
-		height: 500px;
-	}
-	
-.pic-wide {
+.two-col {
 	@include span-columns (8);
 }
+
+.lancemountain {
+	@include span-columns (4 of 8);
+	background-image: url("../images/sk8er-4.png");
+	background-position: right;
+	height: 234px;
+}
+
+.rodneymullin {
+	@include span-columns (4 of 8);
+	background-image: url("../images/sk8er-3.png");
+	height: 234px;
+}
+
+.stevecaballero {
+	@include span-columns (8 of 8);
+	background-image: url("../images/sk8er-1.png");
+	background-position: 75%;
+	height: 234px;
+	position: relative;
+  	bottom: 234px;
+}
+
+.tommyguerrero {
+	 @include span-columns (4);
+	 @include omega();
+	 background-image: url("../images/sk8er-2.png");
+	 background-position: right;
+	 height: 475px;
+}
+
