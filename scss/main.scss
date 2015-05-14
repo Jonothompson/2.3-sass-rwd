@@ -1,3 +1,4 @@
+$visual-grid: true;
 @import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import '../bower_components/neat/app/assets/stylesheets/neat';
 
@@ -42,11 +43,13 @@ li {
 }
 
 .camera-man {
-		background-image: url("../images/top-image.png");
-		height: 350px;
+	background-image: url("../images/top-image.png");
+	height: 350px;
 }
 
 .nav-button {
+	text-align: center;
+	color: white;
 	height: 50px;
 	@include span-columns (3);
 	background-color: #B22A32;
@@ -67,6 +70,7 @@ li {
 
 .two-col {
 	@include span-columns (8);
+	height: 234px;
 }
 
 .lancemountain {
@@ -83,7 +87,7 @@ li {
 }
 
 .stevecaballero {
-	@include span-columns (8 of 8);
+	@include span-columns (8);
 	background-image: url("../images/sk8er-1.png");
 	background-position: 75%;
 	height: 234px;
@@ -99,3 +103,20 @@ li {
 	 height: 475px;
 }
 
+.skateboard-designs {
+	@include span-columns(10);
+	height: 275px;
+	background-color: white;
+	
+	ul {
+		height: 200px;
+		display: block;
+
+	}
+	
+	li {
+		@include span-columns(1);
+		height: 200px;
+		display: inline-block
+	}
+}
